@@ -64,7 +64,7 @@ export const AuthProvider = ({ children }) => {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/dashboard`,
+          redirectTo: `https://marketing-insights-ai.vercel.app/dashboard`,
         },
       });
       if (error) throw error;
