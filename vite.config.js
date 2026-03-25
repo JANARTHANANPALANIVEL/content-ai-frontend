@@ -15,7 +15,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:8001',
+        target: 'https://api.janarthananpalanivel.in',
         changeOrigin: true,
       },
     },
